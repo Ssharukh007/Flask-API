@@ -17,10 +17,17 @@ docker build -t flask_image:Version1 .
 docker run -d --name python_flask_new -p 5000:5000 flask_image:Version1
 
 ```
-### Command to check application
+## Command to check application
 
 ```
 curl http://localhost:5000/
 
 #This can be browsable using Host IP istead of localhost , e:g http://54.173.156.239:5000
+```
+
+### Expected Output
+```
+curl http://localhost:5000/
+
+{"data":"Hello World"}
 ```
